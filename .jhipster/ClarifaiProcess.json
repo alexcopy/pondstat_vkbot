@@ -1,0 +1,52 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "pictid",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "pictkey",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "firstfive",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ignore",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "proc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "model",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rawdata",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180614215122",
+    "entityTableName": "clarifai_process",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "resid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "result",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "matrix",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180614215125",
+    "entityTableName": "results_matrices",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

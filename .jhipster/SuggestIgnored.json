@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "pictid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "modelid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "resultid",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20180614215126",
+    "entityTableName": "suggest_ignored",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

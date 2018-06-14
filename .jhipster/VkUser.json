@@ -1,0 +1,98 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "userId",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "firstname",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "lastname",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "sex",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "bdate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cityid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "citytitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "countryid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "countrytitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "groupscount",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "groupsproc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "images",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "imagesproc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "lastseen",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "platform",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ignore",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "proc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "photo100",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180614215118",
+    "entityTableName": "vk_user",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

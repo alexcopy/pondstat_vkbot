@@ -1,0 +1,42 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "pictid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "modelid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "simpres",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "medres",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ignore",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "isselected",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ismanual",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180614215124",
+    "entityTableName": "picture_recognition",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

@@ -1,0 +1,83 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "pictId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "ownerId",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "proc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "downloaded",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "deleterank",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "procid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "recognized",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "timestamp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "picdate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "size",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "text",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "likes",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ignored",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180614215119",
+    "entityTableName": "vk_picture",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

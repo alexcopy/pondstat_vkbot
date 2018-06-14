@@ -1,0 +1,65 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "groupid",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "screenname",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isclosed",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "proc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "procusers",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "usersqty",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "usersadded",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ignore",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "stateProvince",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180614215120",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "vk_group",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

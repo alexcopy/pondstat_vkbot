@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "modelid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "posmatrix",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "neutmatrix",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "negmatrix",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180614215127",
+    "entityTableName": "selected_key_words",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

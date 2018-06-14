@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "pictid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "modelid",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "procid",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "result",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180614215123",
+    "entityTableName": "model_training",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}

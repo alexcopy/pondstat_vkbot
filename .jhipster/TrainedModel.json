@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "modelName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "posmatrix",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "negmatrix",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "neutmatrix",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modeltype",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180614215121",
+    "entityTableName": "trained_model",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "vkbot"
+}
