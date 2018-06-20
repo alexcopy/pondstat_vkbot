@@ -1,0 +1,133 @@
+
+entity VkUser {
+    userId Integer required,
+    first_name String required,
+    last_name String required,
+    sex String required,
+    bdate String,
+    city_id Integer,
+    city_title String,
+    country_id Integer,
+    country_title String,
+    groups_count Integer,
+    groups_proc Integer,
+    images Integer,
+    images_proc Integer,
+    last_seen Integer,
+    platform String,
+    ignore Integer,
+    proc Integer,
+    photo_100 String,
+}
+
+entity VkPicture {
+	pictId String required,
+    ownerId Integer required,
+    url String required,
+    proc Integer,
+    downloaded Integer,
+    deleterank Integer,
+    type String,
+    proc_id Integer,
+    recognized Integer,
+    timestamp Integer,
+    picdate Integer,
+    size Integer,
+    text String,
+    likes Integer,
+    ignored Integer,
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity VkGroup {
+	group_id Integer required,
+	name String required,
+	screen_name String,
+	type String,
+    is_closed Integer,
+    proc Integer,
+    proc_users Integer,
+    users_qty Integer,
+    users_added Integer,
+    ignore Integer,
+	stateProvince String
+}
+
+entity TrainedModel {
+	modelName String required,
+    pos_matrix String,
+    neg_matrix String,
+    neut_matrix String,
+    modeltype Long
+}
+
+entity ClarifaiProcess {
+	pict_id Integer required,
+	pict_key Integer,
+    url String required,
+    first_five String,
+    ignore Integer,
+    proc Integer,
+    model String,
+    raw_data String
+}
+
+
+entity ModelTraining {
+	pict_id Integer,
+	model_id Long,
+	proc_id Integer,
+	result Integer
+}
+
+entity PictureRecognition {
+	pict_id Integer,
+	model_id Long,
+	simp_res Integer,
+    med_res Integer,
+	ignore Integer,
+	is_selected Integer,
+    is_manual Integer,
+}
+
+entity ResultsMatrices {
+	res_id Long,
+	result Integer,
+	type Integer,
+    matrix Integer
+}
+
+ entity SuggestIgnored {
+ 	pict_id Integer,
+	model_id Long,
+	result_id Long,
+ }
+
+  entity SelectedKeyWords {
+ 	model_id Long,
+	pos_matrix String,
+	neut_matrix String,
+    neg_matrix String,
+ }
+
+   entity Clarifais {
+ 	name String,
+	email String,
+	email_password String,
+    api_key String,
+    model_name String,
+	country String,
+    bill_day String,
+    totalusage Integer,
+    count Integer,
+ }
+// Set pagination options
+paginate Clarifais, TrainedModel, TrainedModel with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with mySuffix

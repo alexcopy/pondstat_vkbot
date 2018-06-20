@@ -19,7 +19,7 @@
             "fieldType": "Integer"
         }
     ],
-    "changelogDate": "20180614215125",
+    "changelogDate": "20180620111126",
     "entityTableName": "results_matrices",
     "dto": "mapstruct",
     "pagination": "no",

@@ -19,7 +19,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20180614215127",
+    "changelogDate": "20180620111128",
     "entityTableName": "selected_key_words",
     "dto": "mapstruct",
     "pagination": "no",

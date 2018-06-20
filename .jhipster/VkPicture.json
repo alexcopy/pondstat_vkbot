@@ -72,7 +72,7 @@
             "fieldType": "Integer"
         }
     ],
-    "changelogDate": "20180614215119",
+    "changelogDate": "20180620111120",
     "entityTableName": "vk_picture",
     "dto": "mapstruct",
     "pagination": "no",

@@ -32,27 +32,35 @@ class ClarifaisGatlingTest extends Simulation {
         "Accept" -> """application/json"""
     )
 
-    val headers_http_authentication = Map(
-        "Content-Type" -> """application/json""",
-        "Accept" -> """application/json"""
-    )
-
     val headers_http_authenticated = Map(
         "Accept" -> """application/json""",
-        "Authorization" -> "${access_token}"
+        "X-XSRF-TOKEN" -> "${xsrf_token}"
+    )
+
+    val keycloakHeaders = Map(
+        "Accept" -> "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Upgrade-Insecure-Requests" -> "1"
     )
 
     val scn = scenario("Test the Clarifais entity")
         .exec(http("First unauthenticated request")
         .get("/api/account")
         .headers(headers_http)
-        .check(status.is(401))).exitHereIfFailed
+        .check(status.is(401))
+        .check(headerRegex("Set-Cookie", "XSRF-TOKEN=(.*);[\\s]").saveAs("xsrf_token"))).exitHereIfFailed
         .pause(10)
         .exec(http("Authentication")
-        .post("/api/authenticate")
-        .headers(headers_http_authentication)
-        .body(StringBody("""{"username":"admin", "password":"admin"}""")).asJSON
-        .check(header.get("Authorization").saveAs("access_token"))).exitHereIfFailed
+        .get("/login")
+        .headers(keycloakHeaders)
+        .check(css("#kc-form-login", "action").saveAs("kc-form-login"))).exitHereIfFailed
+        .pause(10)
+        .exec(http("Authenticate")
+        .post("${kc-form-login}")
+        .headers(keycloakHeaders)
+        .formParam("username", "admin")
+        .formParam("password", "admin")
+        .formParam("submit", "Login")
+        .check(status.is(200))).exitHereIfFailed
         .pause(1)
         .exec(http("Authenticated request")
         .get("/api/account")

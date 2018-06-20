@@ -15,7 +15,7 @@
             "fieldType": "Long"
         }
     ],
-    "changelogDate": "20180614215126",
+    "changelogDate": "20180620111127",
     "entityTableName": "suggest_ignored",
     "dto": "mapstruct",
     "pagination": "no",

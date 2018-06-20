@@ -39,7 +39,7 @@
             "fieldType": "Integer"
         }
     ],
-    "changelogDate": "20180614215128",
+    "changelogDate": "20180620111129",
     "entityTableName": "clarifais",
     "dto": "mapstruct",
     "pagination": "pagination",

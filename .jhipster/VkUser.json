@@ -87,7 +87,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20180614215118",
+    "changelogDate": "20180620111119",
     "entityTableName": "vk_user",
     "dto": "mapstruct",
     "pagination": "no",

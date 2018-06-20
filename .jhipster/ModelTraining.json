@@ -19,7 +19,7 @@
             "fieldType": "Integer"
         }
     ],
-    "changelogDate": "20180614215123",
+    "changelogDate": "20180620111124",
     "entityTableName": "model_training",
     "dto": "mapstruct",
     "pagination": "no",

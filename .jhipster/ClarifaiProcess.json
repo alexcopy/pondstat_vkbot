@@ -41,7 +41,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20180614215122",
+    "changelogDate": "20180620111123",
     "entityTableName": "clarifai_process",
     "dto": "mapstruct",
     "pagination": "no",

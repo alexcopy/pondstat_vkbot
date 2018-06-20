@@ -16,7 +16,7 @@
 logging:
     level:
         ROOT: INFO
-        ru.gpsbox.natmob: INFO
+        ru.gpsbox.vkbot: INFO
         io.github.jhipster: INFO
 
 eureka:
@@ -98,13 +98,6 @@ jhipster:
                 enabled: false
                 update-interval: 3
                 url:
-    security:
-        authentication:
-            jwt:
-                secret: b779b60488d18898ab24eebcc69b5fb6c26961fa
-                # Token is valid 24 hours
-                token-validity-in-seconds: 86400
-                token-validity-in-seconds-for-remember-me: 2592000
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: vkbot@localhost
         base-url: http://my-server-url-to-change # Modify according to your server's URL

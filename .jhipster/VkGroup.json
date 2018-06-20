@@ -53,7 +53,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20180614215120",
+    "changelogDate": "20180620111121",
     "javadoc": "not an ignored comment",
     "entityTableName": "vk_group",
     "dto": "mapstruct",

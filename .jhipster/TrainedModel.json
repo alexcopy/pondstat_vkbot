@@ -23,10 +23,10 @@
         },
         {
             "fieldName": "modeltype",
-            "fieldType": "Integer"
+            "fieldType": "Long"
         }
     ],
-    "changelogDate": "20180614215121",
+    "changelogDate": "20180620111122",
     "entityTableName": "trained_model",
     "dto": "mapstruct",
     "pagination": "pagination",

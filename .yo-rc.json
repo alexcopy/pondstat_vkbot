@@ -1,15 +1,15 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "ru.gpsbox.natmob",
+      "packageName": "ru.gpsbox.vkbot",
       "nativeLanguage": "en"
     },
     "jhipsterVersion": "4.14.4",
     "baseName": "vkbot",
-    "packageName": "ru.gpsbox.natmob",
-    "packageFolder": "ru/gpsbox/natmob",
+    "packageName": "ru.gpsbox.vkbot",
+    "packageFolder": "ru/gpsbox/vkbot",
     "serverPort": "8082",
-    "authenticationType": "jwt",
+    "authenticationType": "oauth2",
     "cacheProvider": "hazelcast",
     "enableHibernateCache": false,
     "websocket": false,
@@ -22,7 +22,7 @@
     "buildTool": "maven",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": true,
-    "jwtSecretKey": "b779b60488d18898ab24eebcc69b5fb6c26961fa",
+    "jwtSecretKey": "753475f2cfa0e4116c8a52ef8cda285e3fe90d98",
     "enableTranslation": true,
     "applicationType": "microservice",
     "testFrameworks": [
